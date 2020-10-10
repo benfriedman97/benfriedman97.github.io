@@ -1,16 +1,17 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
   <head>
     <meta charset="utf-8">
-    <title>Benjamin Friedman</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>BEN FRIEDMAN</title>
+    <link rel="stylesheet" type="text/css" href="css/indexstyle.css">
   </head>
 
   <body>
     <header id="page-title">
       <div>
-        <h1>Ben's First Website</h1>
+        <h1>BEN FRIEDMAN</h1>
       </div>
     </header>
 
@@ -20,26 +21,26 @@
       link will open-->
     <nav id="navbar">
         <ul>
-          <li><a href = "links/assignment_links.html">
-            Assignments</a></li>
-          <li><a href = "https://github.com/benfriedman97/benfriedman97.github.io"
-            target = "_blank">
-            Github</a></li>
-          <li><a href="links/contact.html">Contact</a></li>
+          <li><a href = "#About Me">ABOUT ME</a></li>
+          <li><a href = "https://github.com/benfriedman97"
+            target = "_blank">GITHUB</a></li>
+          <li><a href="#Contact">CONTACT</a></li>
         </ul>
     </nav>
 
     <!--Displays the blue image up top-->
-    <div id = "main-image"></div>
+    <div id = "main-image">
+      <p>Do Not Go Gentle Into That Good Night...Rage, Rage Against The Dying Of The Light</p>
+    </div>
 
     <!--Displays the welcome message with the UMass Lowell logo-->
-    <div id = "welcome">
+    <div class = "container">
         <h1>Welcome</h1>
-        <p><img src="images/UMass-Lowell-logo.png" alt="">
-          This is the first web page I have ever created. It is for my GUI I
-          class at UMass Lowell where I study computer science. You can use the
-          navigation bar to get my contact infomration and see other assignments
-          from this class.
+        <p>
+          Welcome to my website. I am a computer science student aspiring to be a software engineer.
+          Use the navigation bar to see my GitHub or my contact information. The GitHub repositories
+          containing my academic work and my work as a computer science grader are private.
+          Contact me if you would like access to them.
         </p>
     </div>
 
@@ -51,21 +52,19 @@
       CSS crash course. It provides some basic general formatting for displaying
       text so it all looks uniform on the page.-->
     <div class="container">
-      <h1>About Me</h1>
-      <p>
-        I am a junior computer science student at UMass Lowell. Outside of class I work
-        as a calculus and computer science tutor as well as a grader for Computing II
-        which is the CS data structures class. Before joining the workforce I will most
-        likely complete the 5th-year masters program. Below is a list of courses that
-        I've completed and programming languages I have experience with.
-        </p>
+      <div id = "About Me">
+        <h1>About Me</h1>
+        <p>
+          I am a junior computer science student at UMass Lowell. Outside of class I work
+          as a calculus and computer science tutor as well as a grader for the data structures
+          class. After graduation I will get my masters degree and then enter the workforce.
+          </p>
+        </div>
     </div>
 
     <!--Displays a row of blocks. Each block is a box containing a list-->
     <div class="container">
-      <!--First List-->
-      <div class="block">
-        <h3>Courses</h3>
+      <h1>Courses</h1>
         <ul>
           <li>Computing I-IV</li>
           <li>Assembly Language</li>
@@ -74,22 +73,27 @@
           <li>Organization of Programming Languages</li>
           <li>Graphical User Interface I</li>
         </ul>
-      </div>
-      <!--Second List-->
-      <div class="block">
-        <h3>Programming Languages</h3>
-        <ul>
-          <li>C</li>
-          <li>C++</li>
-          <li>Java</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Various Assembly Languages</li>
 
-        </ul>
-      </div>
     </div>
 
+    <div class = "container">
+      <h1>Programming Languages</h1>
+      <ul>
+        <li>C</li>
+        <li>C++</li>
+        <li>Java</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Various Assembly Languages</li>
+      </ul>
+    </div>
+
+    <div class = "container">
+      <div id = "Contact">
+        <h1>Contact</h1>
+        <p>Email: benjamin_friedman@student.uml.edu</p>
+      </div>
+    </div>
     <!--Copyright footer at the bottom of the page with css
     valid verification icon-->
     <footer id="copyright-footer">
