@@ -1,18 +1,122 @@
+<!--
+File: /~bfriedm1/index.html
+COMP.4610 GUI I: Creating Your First Web Page (Assignment 2)
+Benjamin G. Friedman, UMass Lowell Computer Science
+benjamin_friedman@student.uml.edu
+Copyright (c) 2020 by Benjamin G. Friedman. All Rights reserved. May be
+freely copied or excerpted for education purposes with credit to the author.
+Created September 10, 2020.
+
+Sources: I used w3schools and Traversey Media's HTML tutorials
+and crash Courses
+- https://www.w3schools.com/html/
+- https://www.youtube.com/watch?v=UB1O30fR-EE
+
+-->
+
 <!DOCTYPE html>
+<html lang="en" dir="ltr">
 
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
-</head>
+  <head>
+    <meta charset="utf-8">
+    <title>Ben's First Website</title>
+    <link rel="stylesheet" type="text/css" href="HW02/css/hw02style.css">
+  </head>
 
-<body>
+  <body>
+    <header id="page-title">
+      <div>
+        <h1>Ben's First Website</h1>
+      </div>
+    </header>
 
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
+    <!--Displays a navigation menu bar that the user can click on. Links to
+      a contact info page, my github, and an assignment links page. Right now I haven't
+      done any more assignments so there's nothing on that page. The Github
+      link will open-->
+    <nav id="navbar">
+        <ul>
+          <li><a href = "HW02/assignment_links.html">
+            Assignments</a></li>
+          <li><a href = "https://github.com/benfriedman97/benfriedman97.github.io"
+            target = "_blank">
+            Github</a></li>
+          <li><a href="HW02/contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
+    <!--Displays the blue image up top-->
+    <div id = "main-image"></div>
 
-</body>
+    <!--Displays the welcome message with the UMass Lowell logo-->
+    <div id = "welcome">
+        <h1>Welcome</h1>
+        <p><img src="HW02/images/UMass-Lowell-logo.png" alt="">
+          This is the first web page I have ever created. It is for my GUI I
+          class at UMass Lowell where I study computer science. You can use the
+          navigation bar to get my contact infomration and see other assignments
+          from this class.
+        </p>
+    </div>
+
+    <!--Clears any floats-->
+    <div class="clr"></div>
+
+    <!--Begins the about me section. First use of the container class. <thead>
+      container class was something I learned from watching Traversey Media's
+      CSS crash course. It provides some basic general formatting for displaying
+      text so it all looks uniform on the page.-->
+    <div class="container">
+      <h1>About Me</h1>
+      <p>
+        I am a junior computer science student at UMass Lowell. Outside of class I work
+        as a calculus and computer science tutor as well as a grader for Computing II
+        which is the CS data structures class. Before joining the workforce I will most
+        likely complete the 5th-year masters program. Below is a list of courses that
+        I've completed and programming languages I have experience with.
+        </p>
+    </div>
+
+    <!--Displays a row of blocks. Each block is a box containing a list-->
+    <div class="container">
+      <!--First List-->
+      <div class="block">
+        <h3>Courses</h3>
+        <ul>
+          <li>Computing I-IV</li>
+          <li>Assembly Language</li>
+          <li>Computer Architecture</li>
+          <li>Operating Systems</li>
+          <li>Organization of Programming Languages</li>
+          <li>Graphical User Interface I</li>
+        </ul>
+      </div>
+      <!--Second List-->
+      <div class="block">
+        <h3>Programming Languages</h3>
+        <ul>
+          <li>C</li>
+          <li>C++</li>
+          <li>Java</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Various Assembly Languages</li>
+
+        </ul>
+      </div>
+    </div>
+
+    <!--Copyright footer at the bottom of the page with css
+    valid verification icon-->
+    <footer id="copyright-footer">
+      <p>Copyright &copy; 2020 Benjamin G. Friedman</p>
+      <p><a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+            alt="Valid CSS!" /></a>
+      </p>
+    </footer>
+
+
+  </body>
 </html>
