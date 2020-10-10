@@ -1,17 +1,128 @@
-* {
-  margin:0px;
-  padding:0px;
+/*
+File: /~bfriedm1/css/style.css
+COMP.4610 GUI I: Creating Your First Web Page (Assignment 2)
+Benjamin G. Friedman, UMass Lowell Computer Science
+benjamin_friedman@student.uml.edu
+Copyright (c) 2020 by Benjamin G. Friedman. All rights reserved. May be
+freely copied or excerpted for education purposes with credit to the author.
+Created September 17, 2020.
+
+Sources: I used w3schools tutorials and Traversey Media's crash courses.
+- https://www.w3schools.com/css/default.asp
+- https://www.youtube.com/watch?v=yfoY53QXEnI
+*/
+
+
+/*General display of the text and background.
+Provides a softer background color than white and
+adds a bit more space between lines*/
+body {
+  font-family:Arial;
+  color:Black;
+  background-color:GhostWhite;
+  line-height: 1.4em;
 }
 
-#octocat {
-  display: block;
-  width:384px;
-  margin: 50px auto;
+/*A general text display class Keeps everything centered background and
+  in the middle 80*/
+.container {
+  width:80%;
+  margin:auto;
+  overflow:hidden;
 }
 
-p {
-  display: block;
-  width: 400px;
-  margin: 50px auto;
-  font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+/*clears any floats*/
+.clr{
+	clear:both;
+}
+
+/*block class: allows for a row of "blocks"
+where each block is a box displaying something different*/
+.block {
+	float:left;
+	width:50%;
+	border:2px solid #ccc;
+	padding:10px;
+	box-sizing:border-box;
+}
+
+/*Highlight pattern for text displayed in the block*/
+.block li:nth-child(even){
+  background:LightCyan;
+}
+.block li:nth-child(odd){
+  background:LemonChiffon;
+}
+
+
+/*Now these are the id's*/
+/*sets the text/background color of the page title*/
+#welcome {
+  margin-left:10%;
+}
+
+#welcome img{
+  float:right;
+  margin-right:10px;
+}
+
+#page-title {
+  background-color:LightSteelBlue;
+  text-align:center;
+  border: 5px black solid;
+}
+
+/*Formats the navigation bar*/
+#navbar {
+  overflow:hidden;
+  background-color:DimGray;
+  color:black;
+}
+
+#navbar ul {  /*formats the whole navbar*/
+  margin-left:10%;
+  padding:0;
+  list-style:none;
+}
+#navbar li {  /*formats each item of the navbar*/
+  display:inline;
+}
+
+#navbar a{    /*formats the text of each item of the navbar*/
+  color:black;
+  text-decoration:none;
+  font-size:20px;
+  padding-right:20px
+
+}
+
+/*Image displayed below navbar*/
+#main-image {
+  background-image:url('../images/background.jpg');
+  min-height:300px;
+  background-position:center;
+  background-repeat:no-repeat;
+  text-align:center;
+}
+
+
+/*Formats the welcome message*/
+#main-message {
+  float:left;
+  width:66.7%;
+  padding-bottom:100px;
+  margin-right:150px;
+}
+
+/*Formats the UML logo next to the welcome image*/
+#main-message img {
+  float:right;
+}
+
+/*Formats the copyright statement at the bottom of the page*/
+#copyright-footer{
+  background:DimGray;
+  text-align:center;
+  padding:20px;
+  margin-top:40px;
 }
