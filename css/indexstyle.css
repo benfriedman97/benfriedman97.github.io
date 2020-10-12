@@ -17,18 +17,7 @@ body {
 	clear:both;
 }
 
-.image-collage {
-  width:80%;
-  margin:auto;
-  overflow:hidden;
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
 
-.image-collage img {
-  float:left;
-  margin-right:10px;
-}
 
 #main-image {
   background:url("../images/Those Aren't Mountains...They're Waves.jpg");
