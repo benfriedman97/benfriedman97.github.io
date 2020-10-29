@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--
+  File: /~bfriedm1/HW05/index.html
+  COMP.4610 GUI Programming I
+  Assignment 5: Create a dynamic table using javascript
+    - design and style a webpage using HTML/CSS that will take user input
+      and from there construct below the form a table with starting and ending
+      values for the rows/columns as determined by the user input.
+  Name: Benjamin G. Friedman
+  Email: benjamin_friedman@student.uml.edu
+  Copyright (C) 2020 by Benjamin G. Friedman. All rights reserved. May be freely
+  copied or excerpted for educational purposes with credit to the author.
+  updated by BGF on 10/25/20.
+-->
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+    <title>HW05</title>
+
+    <link rel="icon" href="res/icon.ico" type="image/x-icon"> <!-- tab icon -->
+
+    <!-- Bootstrap -->
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+    crossorigin="anonymous"
+    />
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script
+    src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+    crossorigin="anonymous">
+    </script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+    integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+    crossorigin="anonymous">
+    </script>
+
+    <!-- custom css file with code for displaying the table -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Container for the website heading -->
+    <div class="container">
+      <div class="well">
+        <h1 class="text-center">Multiplication Table</h1>
+        <p class="text-center">Enter the lowest and highest values to be displayed in
+          the multiplication table and the table will generate</p>
+      </div>
+
+      <!-- Form for user input -->
+      <form class="form">
+
+        <label for="row_min" class="mr-sm-2">Row Min</label>
+        <input type="number" class="form-control mb-2 mr-sm-2" placeholder="row min" id="row_min">
+
+        <label for="row_max" class="mr-sm-2">Row Max</label>
+        <input type="number" class="form-control mb-2 mr-sm-2" placeholder="row max" id="row_max">
+
+        <label for="col_min" class="mr-sm-2">Col Min</label>
+        <input type="number" class="form-control mb-2 mr-sm-2" placeholder="col min" id="col_min">
+
+        <label for="col_max" class="mr-sm-2">Col Max</label>
+        <input type="number" class="form-control mb-2 mr-sm-2" placeholder="col max" id="col_max">
+
+        <!-- upon clicking "submit" button, getUserInput() function will be called in JS -->
+        <input type="button" onclick="getUserInput()" value="Submit">
+      </form>
+    </div>
+
+  <br>
+
+    <!-- Temoprary placeholder for the table before user input comes in -->
+    <div class="container">
+      <div class="well" id="table-placeholder">
+        <!-- JavaScript will generate the table here -->
+        <h3 class="text-center" id="dipslay-message">Multiplication Table Will Appear Here</h3>
+      </div>
+    </div>
+
+    <!-- JavaScript file -->
+    <script type="text/JavaScript" src="js/javascript.js"></script>
+</body>
+
+</html>
